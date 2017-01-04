@@ -1,0 +1,478 @@
+/*index.css*/
+.top{
+	height: 30px;
+}
+.tz{
+	padding: 10px;
+}
+
+
+#li1{
+	position: relative;
+	left: 5px;
+}
+.dl{
+	color: red;
+}
+.basic li,.user li{
+	height: 30px;
+	line-height: 30px;
+	float:left;
+}
+
+.basic{
+	margin-left: -11px;
+}
+
+.collect{
+	background: url("../images/star.png") no-repeat;
+	width: 17px;
+	height: 12px;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+}
+
+a:hover .collect{
+	background: url("../images/star-hover.png") no-repeat;
+	width: 17px;
+	height: 12px;
+	display: inline-block;
+
+}
+
+.toggleli{
+	position: relative;
+}
+
+.togglea{                 /*手机美团*/
+	display: inline-block;
+	height: 30px;
+	background: #f9f9f9;
+	position: relative;
+	padding: 0 5px 0 15px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+
+.on .togglemenu{
+	display: block;       /*显示下拉菜单*/
+}
+
+.on .togglea{
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.on .icon-phone{
+	background: url("../images/sp-main.png") -334px -158px no-repeat;
+}
+
+.on .icon-tri{
+	border: 4px solid transparent;
+	border-bottom-color: #666;
+	top:-2px; 
+}
+
+.togglemenu{              /*下拉内容*/
+	display: none;        /*默认隐藏*/
+	background: white;
+	position: absolute;
+	white-space: nowrap;  /*不要换行*/
+	padding: 0px 17px 10px 17px;
+}
+
+.user .togglemenu{
+	right: 0;
+}
+
+.togglemenu img{
+    display: block;
+}
+
+.togglemenu li{
+	float: none;
+}
+
+.icon-phone{
+	background: url("../images/sp-main.png") -334px -134px no-repeat;
+	width: 15px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+.icon-tri{
+	border: 4px solid transparent;
+	border-top-color: #ccc;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	position:relative;
+	top:2px;
+
+}
+
+.vertical-line{         /*竖线*/
+	height: 12px;
+	width: 1px;
+	background: #ddd;
+	display: inline-block;
+	position: absolute;
+	top:10px;
+	right:-1px;
+}
+/*                    顶部导航条                             */
+/*                     搜索栏                                */
+.logo{
+	height: 70px;
+}
+.icon-logo{
+	background: url("../images/sp-main.png") -258px -43px no-repeat;
+	width: 85px ;
+	height:60px ;
+	display: inline-block;
+}
+
+.logobox{
+	width: 334px;
+	height: 77px;
+}
+
+.city{
+  padding-top: 10px;
+}
+
+#change-city{
+	font-size: 10px;color:#a0a0a0;
+    border: 1px solid #ddd;
+    padding: 3px;
+    position: relative;
+    top:-48px;
+    left:95px;
+    cursor: pointer;
+}
+#current-city{
+	position: relative;
+	left: 96px;
+	top: -64px;
+	cursor: pointer;
+}
+
+.searchbox{
+	width: 528px;
+	height: 69px;
+	display: inline-block;
+}
+
+.search{
+	height: 38px;
+	width: 343px;
+	border: 2px solid #2db8ad;
+	border-left: none;
+	border-right: none;
+	background-color: transparent;
+	font-size: 14px;
+}
+
+.searchmenu{
+	width: 67px;
+    height: 38px;
+    border: 2px solid #2db8ad;
+    display: inline-block;
+    position: relative;
+    left: 4px;
+    border-right: 1px solid #ddd;
+    text-indent: 20px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ddd;
+    cursor:pointer;
+}
+
+.searchbox button{
+	height: 42px;
+	width:  68px;
+	background-color: #2bb8aa;
+	border: 2px solid #2bb8aa;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+	margin-left:-4px; 
+}
+
+input:focus {outline:none;}
+
+.daohang a{
+	float: left;
+	display: inline-block;
+	padding: 12px;
+	text-align: center;
+}
+
+.promise {
+	float: right;
+	padding:15px;
+	text-align: center;
+	font-size: 12px;
+
+}
+
+.promise img{
+	display: block;
+	line-height: 5;
+	margin: 0px auto;
+}
+.promise a{
+	display: inline-block;
+	padding-left: 18px;
+	color: #999;
+	text-decoration: none; 
+}
+
+#bingo{
+	text-align: center;
+}
+/*                              顶部搜索end                   */
+
+.nav{
+	height: 530px;
+}
+
+.navbox{
+	height: 40px;
+	background: #2bb8aa;
+	line-height: 40px;
+}
+.navbox h2{
+	height: 40px;
+	width: 245px;
+	text-align: left;
+	color: #fff;
+	cursor: default;
+	position: relative;
+	left: 18px;
+}
+.navsearch li {
+	display: inline-block;
+	width: 90px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 16px;
+	height: 40px;
+	width: 90px;
+}
+
+.navsearch li a{
+	color: #fff;
+	text-decoration:none;
+}
+
+.navlead{
+	height: 490px;
+	width: 1170px;
+}
+
+.nav-lead{
+	background-color: #fafafa;
+	display: inline-block;
+	margin-left: -710px;
+	position: relative;
+}
+
+.nav-li{
+	width: 246px;
+	height: 53px;
+	border: 1px solid #eee;
+	border-top: none;
+	line-height: 53px;
+}
+
+.nav-lead a{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.nav-main{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	position:relative; 
+	left: 13px;
+
+}
+
+.turn-right {
+	background: url("../images/arrow-right.png");
+	width: 15px;
+	height: 17px;
+	display: inline-block;
+	margin-left: -4px;
+	margin-right: 12px;
+	position: relative;
+	top: 3px;
+}
+
+.popup.on{
+	display: inline-block;
+}
+
+.popup{
+	width: 280px;
+	height: 486px;
+	float: left;
+	position: absolute;
+	left: 248px;
+	background-color: white;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	display: none;
+	z-index: 2;
+	top: 0px;
+}
+
+.shrink{
+	width: 140px;
+}
+
+.popup li{
+	line-height: 24px;
+}
+
+.popup-left{
+	margin-left: 25px;
+	width: 135px;
+	display: inline-block;
+}
+
+.popup h2{
+	line-height: 60px;
+	margin-left: 25px;
+}
+
+.popup a{
+	text-decoration:none;
+}
+
+.popup-right{
+	display: inline-block;
+
+}
+/*          弹出框          */
+
+.navMid{
+	height: 490px;
+	width: 710px;
+}
+
+.nav-mid{
+	width: 710px;
+	height: 479px;
+	margin-left: 3px;
+}
+.nav-mid li,.nav-mid h4,.nav-mid ul{
+	display: inline-block;
+	margin-left: 18px;
+}
+
+.nav-mid a{
+	text-decoration: none;
+}
+
+.nav-mid{
+	height: 51.5px;
+	line-height: 54px;
+	border-bottom: 1px solid #eee;
+}
+
+.fire{
+	background: url("../images/hot-groupbuy.png") 4px 3px no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	top: 3px;
+}
+
+.location{
+	background: url("../images/hot-position.png") 3px 1px no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	top: 3px;
+}
+
+.house{
+	background: url("../images/hot-area.png") 2px 1px no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	top: 3px;
+}
+
+.nav-more{
+	border: 1px solid #eee;
+	padding: 2px;
+}
+
+#container{
+	width:640px;
+	height: 315px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 2px;
+	left: 40px;
+	border:none;
+}
+
+#container img{
+	height: 315px;
+}
+
+.adv{
+	width: 200px;
+	height: 480px;
+	display: inline-block;
+
+}
+
+.adv1{
+	height: 160px;
+	border: 1px solid #eee;
+	border-top: none;
+}
+
+.adv2{
+	height: 320px;
+	border: 1px solid #eee;
+	border-top: none;
+	text-align: center;
+}
+.adv2 h1{
+	font-size: 23px;
+	color: #929292;
+	padding-top: 45px;
+}
+.adv2 h3{
+	color:#999;
+	line-height: 40px;
+}
+
+/*              famous        */
+.famous{
+	height: 313px;
+}
+
+
+
+
+
+
+/*           famous end                 */
